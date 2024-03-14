@@ -15,7 +15,11 @@ public:
     explicit Solver123(QWidget *parent = nullptr);
     ~Solver123();
 
+    void currentAmountChanger();
+    void addRangeButton_clicked();
+    void deleteRangeButton_clicked();
 private:
+    int starting_amount;
     Ui::Solver123 *ui;
 };
 
