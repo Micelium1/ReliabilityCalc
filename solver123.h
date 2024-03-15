@@ -18,6 +18,8 @@ public:
     void currentAmountChanger();
     void addRangeButton_clicked();
     void deleteRangeButton_clicked();
+    void calculator(int row, int column);
+    float probabilityCalc(float range_start, float range_end, int amount_of_failed_products);
 private:
     int starting_amount;
     Ui::Solver123 *ui;
