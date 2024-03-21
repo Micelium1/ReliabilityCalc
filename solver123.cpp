@@ -84,6 +84,7 @@ void Solver123::deleteRangeButton_clicked()
         {
             ui->mainTable->removeRow(bottom_row);
         }
+        ui->mainTable->item(top_row,0)->setText(ui->mainTable->item(top_row-1,1)->text());
         int row_count = ui->mainTable->rowCount();
         for(;top_row < row_count;++top_row)
         {
