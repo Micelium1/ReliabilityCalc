@@ -2,6 +2,7 @@
 #define SOLVER123_H
 
 #include <QDialog>
+#include <QVector>
 
 namespace Ui {
 class Solver123;
@@ -15,13 +16,16 @@ public:
     explicit Solver123(QWidget *parent = nullptr);
     ~Solver123();
 
-    void currentAmountChanger();
+    void startingAmountChanger();
     void addRangeButton_clicked();
     void deleteRangeButton_clicked();
     void calculator(int row, int column);
-    float probabilityCalc(float range_start, float range_end, int amount_of_failed_products);
+    float probabilityCalc(int row);
+    float failureRateCalc(int row);
+    float frequencyEstimation(int row);
 private:
-    int starting_amount;
+    float starting_amount;
+    QVector<float> failedProducts;
     Ui::Solver123 *ui;
 };
 

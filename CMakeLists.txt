@@ -29,6 +29,7 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         solver123.h solver123.cpp solver123.ui
         solver45.h solver45.cpp solver45.ui
         solver6.h solver6.cpp solver6.ui
+        validatedcellwidget.cpp validatedcellwidget.h
 
 
     )
