@@ -15,6 +15,9 @@ public:
     explicit Solver45(QWidget *parent = nullptr);
     ~Solver45();
 
+    void addRangeButton_clicked();
+    void deleteRangeButton_clicked();
+    void calculator(int row, int column);
 private:
     Ui::Solver45 *ui;
 };

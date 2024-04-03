@@ -11,9 +11,6 @@ Solver6::Solver6(QWidget *parent) :
     ui->mainTable->setItemDelegateForColumn(0,new ValidatedCellWidget(ui->mainTable,true));
     ui->mainTable->setItemDelegateForColumn(1,new ValidatedCellWidget(ui->mainTable,true));
     ui->mainTable->setItemDelegateForColumn(2,new ValidatedCellWidget(ui->mainTable,true));
-    ui->mainTable->setItemDelegateForColumn(3,new ValidatedCellWidget(ui->mainTable));
-    ui->mainTable->setItemDelegateForColumn(4,new ValidatedCellWidget(ui->mainTable));
-    ui->mainTable->setItemDelegateForColumn(5,new ValidatedCellWidget(ui->mainTable));
     connect(ui->addRangeButton,&QPushButton::clicked,this,&Solver6::addRangeButton_clicked);
     connect(ui->deleteRangeButton,&QPushButton::clicked,this,&Solver6::deleteRangeButton_clicked);
     connect(ui->mainTable,&QTableWidget::cellChanged,this,&Solver6::calculator);
